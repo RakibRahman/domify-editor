@@ -1,4 +1,4 @@
-#Domify Editor
+# Domify Editor
 
 With **Domify Editor** you can:
 

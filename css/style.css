@@ -3,6 +3,7 @@ body {
   background-repeat: no-repeat;
   height: 100vh;
 }
+
 .wrapper {
   font-family: cursive;
   margin-top: 30px;
@@ -13,40 +14,49 @@ body {
   text-align: center;
   gap: 20px;
 }
+
 #main {
   margin-top: 20px;
 }
+
 #main > * {
   margin: 10px 0;
   border-bottom: 1px solid coral;
 }
+
 .bigger {
   font-size: 25px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 .border {
   border: 5px solid blueviolet;
 }
+
 .linear {
   color: white;
   background: linear-gradient(to right, green, blue);
 }
+
 #note {
   position: absolute;
   top: 0;
   right: -10;
   animation: fading 2s ease-in-out 0s infinite;
-  @keyframes fading {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+@keyframes fading {
+  from {
+    opacity: 0;
   }
-  p {
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: bold;
+  to {
+    opacity: 1;
   }
 }
+
+#note p {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
