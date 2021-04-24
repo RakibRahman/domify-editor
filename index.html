@@ -1,33 +1,56 @@
-<html>
-  <head> </head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domify Editor</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
   <body>
-    Add Element:
-    <select name="addElement"></select>
-    <button name="adder">Add</button>
-    <br />
-    Select Element
-    <select name="eleMaker"></select>
-    <br />
-    Inner Text :
-    <input type="text" name="outputText" value="Laurence" />
-    <br />
-    Background :
-    <input type="color" name="bg" value="#ffffff" />
-    <br />
-    Text Color:
-    <input type="color" name="txt" value="#000000" />
-    <br />
-    Toggle Classes
-    <select name="classes"></select>
-    <br />
-    <button class="btn">Update</button>
-    <div id="main">
-      <div>Hello World</div>
-      <p>Laurence</p>
-      <span>JavaScript</span>
-    </div>
+    <div class="wrapper">
+      <h1>Domify Editor</h1>
+      <div>
+        Add Element:
+        <select name="addElement"></select>
+        <button name="adder">Add</button>
+      </div>
 
+      <label>
+        Select Element:
+        <select name="elementSelector"></select>
+      </label>
+      <label>
+        Inner Text :
+        <input type="text" name="outputText" value="Rakib" />
+      </label>
+
+      <label>
+        Background :
+        <input type="color" name="bg" value="#ffffff" />
+      </label>
+
+      <label>
+        Text Color:
+        <input type="color" name="txt" value="#000000" />
+      </label>
+
+      <label>
+        Toggle Classes
+        <select name="classes"></select>
+      </label>
+
+      <button class="btn">Update</button>
+      <div id="main">
+        <div id="output">Hello Coder!</div>
+        <p>Be a bug fixer</p>
+        <span>JavaScript is Awesome!</span>
+      </div>
+    </div>
+    <div id="note">
+      <p>Double Click to remove Element</p>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
